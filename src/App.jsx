@@ -15,8 +15,8 @@ import NotFound from "./Pages/NotFound";
 import "./App.css";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import PrivateRoute from "./route/PrivateRoute";
 function App() {
-  const isLogin = true;
   return (
     <>
       <BrowserRouter>
@@ -25,10 +25,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route
-              path="/userlist"
-              element={isLogin ? <Outlet /> : <Navigate to={"/"} />}
-            >
+            <Route path="/userlist" element={<PrivateRoute />}>
               <Route index element={<UserList />} />
               <Route path=":id" element={<UserDetail />} />
             </Route>
