@@ -1,13 +1,15 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 function Child({ click }) {
   console.log("render child component");
   return (
     <div>
-      Child <br />
-      <button className="btn" onClick={click}>
+      <h1>Home Child page</h1>
+
+      <Button variant="primary" onClick={click}>
         Click
-      </button>
+      </Button>
     </div>
   );
 }
