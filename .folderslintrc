@@ -1,0 +1,26 @@
+{
+  "root": "src",
+  "rules": [
+    "assets/**",
+    "Components/*",
+    "Components/Form/**",
+    "Hooks/*",
+    "Layout/*",
+    "Pages/*",
+    "Pages/Admin/*",
+    "Pages/Admin/OrgConfiguration/*",
+    "Pages/Admin/UserManagement/*",
+    "Pages/Sales/*",
+    "Pages/Sales/Inventory/*",
+    "Pages/Inventry/*",
+    "Pages/Inventry/Indent/*",
+    "Pages/Sales/QuotationRequest/*",
+    "Routes/*",
+    "Store/*",
+    "Store/Api/**",
+    "Store/Feature/**",
+    "Types/*",
+    "Utils/*",
+    "GlobalTypes/*"
+  ]
+}
